@@ -1,14 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>boucles javascript
-        
-    </title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>boucles javascript</title>
 </head>
+
 <body>
-    
+    <h1>Exercice 1</h1>
+    <p>
+        Créer une variable et l'initialiser à 0. Tant que cette variable n'atteint
+        pas 10 : l'afficher incrémenter de 1
+    </p>
+    <script>
+        for (let i = 0; i < 11; i++) {
+            document.write(i);
+        }
+    </script>
+
+    <h1>Exercice 2</h1>
+    <p>
+        Créer deux variables. Initialiser la première à 0 et la deuxième avec un
+        nombre compris en 1 et 100. Tant que la première variable n'est pas
+        supérieur à 20 : multiplier la première variable avec la deuxième afficher
+        le résultat incrémenter la première variable
+    </p>
+    <script>
+        let a = 0;
+        let b = 40;
+        do {
+            a * b;
+            a++;
+        } while (a <= 20);
+        document.write(a * b);
+    </script>
+
+    <h1>Exercice 3</h1>
+    <p>Créer deux variables. Initialiser la première à 100 et la deuxième avec un nombre compris en 1 et 100. Tant que
+        la première variable n'est pas inférieur ou égale à 10 : multiplier la première variable avec la deuxième
+        afficher le résultat décrémenter la première variable</p>
+
+    <script>
+        let c = 100;
+        let d = 40;
+        while (c > 10) {
+            c * d;
+            c--;
+            console.log(c * d);
+        }
+    </script>
+
+    <h1>Exercice 4</h1>
+    <p>Créer une variable et l'initialiser à 1. Tant que cette variable n'atteint pas 10 : l'afficher l'incrementer de
+        la moitié de sa valeur</p>
+
+        <p> PAS COMPRIS CELUI LA :pp</p>
+    <H1>Exercice 5</H1>
+    <p>
+
+        En allant de 1 à 15 avec un pas de 1, afficher le message On y arrive presque...</p>
+        <script>
+            let e = 0;
+            while(e <=15){
+                e++;
+                document.write(" on y arrive presque <br/>");
+            }
+        </script>
+
+    <h1>Exercice 6</h1>
+    <p>En allant de 20 à 0 avec un pas de 1, afficher le message C'est presque bon...</p>
+    <script>
+        let f = 20;
+        while(f > 0){
+            f--;
+            document.write("c'est presque bon<br />");
+        }
+    </script>
+    <h1>Exercice 7</h1>
+    <p>En allant de 1 à 100 avec un pas de 15, afficher le message On tient le bon bout...</p>
+
+    <script>
+        let g = 0;
+        while(g < 100){
+            g += 15;
+            document.write("on tient le bon bout<br />");  
+        }
+
+    </script>
+
+    <h1>Exercice 8 </h1>
+    <p>En allant de 200 à 0 avec un pas de 12, afficher le message Enfin ! ! !</p>
+    <script>
+        let h = 200;
+        while(h > 0){
+            h-= 12;
+            document.write("enfin<br />");
+        }
+    </script>
+            
 </body>
+
 </html>
