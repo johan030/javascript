@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableaux</title>
+</head>
+<body>
+<h1>Exercice 1</h1>
+<p>Créer un tableau mois et l'initialiser avec le nom des douze mois de l'année.</p>
+<script>
+    let mois = ["janvier", "fevrier", "mars", "avril", "mai", "juin", "juillet", "aout", "septembre", "octobre", "novembre", "decembre"];
+        document.write(mois[7]);
+        document.write(mois[5]);
+        mois.splice(7, 1, 'août');
+        console.log(mois);
+</script>
+<script>
+    let departement = {
+        59:'nord',
+        02:'aisne',
+        60:'oise',
+        62:'calais',
+        80:'somme'
+    };
+    let deptnord = departement[59];
+    document.write(deptnord);
+ 
+    
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fonction</title>
+  </head>
+  <body>
+    <h1>Exercice 1</h1>
+    <p>Faire une fonction qui retourne true</p>
+
+    <script>
+      function isEqual(a, b) {
+        if (a === b) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      document.write(isEqual(5, 5));
+    </script>
+
+    <h1>Exercice 2</h1>
+    <p>
+      Faire une fonction qui prend en paramètre une chaine de caractères et qui
+      retourne cette même chaine.
+    </p>
+    <script>
+      let x = "fonction";
+      function myfunction(x) {
+        document.write(x);
+      }
+      myfunction(x);
+    </script>
+
+    <h1>Exercice 3</h1>
+    <p>
+      Faire une fonction qui prend en paramètre deux chaines de caractères et
+      qui renvoit la concaténation de ces deux chaines.
+    </p>
+
+    <script>
+      let g = "Hello ";
+      let f = "World";
+      let h;
+      function concatenation(g, f) {
+        h = g + f;
+        document.write(h);
+      }
+      concatenation(g, f);
+    </script>
+
+    <h1>Exercice 4</h1>
+    <p>
+      Faire une fonction qui prend en paramètre deux nombres. La fonction doit
+      retourner : Le premier nombre est plus grand si le premier nombre est plus
+      grand que le deuxième Le premier nombre est plus petit si le premier
+      nombre est plus petit que le deuxième Les deux nombres sont identiques si
+      les deux nombres sont égaux
+    </p>
+
+    <script>
+      let nombre1 = 5;
+      let nombre2 = 8;
+      function comparaison(nombre1, nombre2) {
+        if (nombre1 > nombre2) {
+          document.write("le nombre 1 est plus grand que le nombre 2");
+        } else if (nombre1 < nombre2) {
+          document.write("le nombre 1 est plus petit que le nombre 2");
+        } else if (nombre1 == nombre2) {
+          document.write("le nombre 1 est égal au nombre2");
+        } else {
+          document.write("invalid");
+        }
+      }
+      comparaison(nombre1, nombre2);
+    </script>
+
+    <h1>Exercice 5</h1>
+    <p>
+      Faire une fonction qui prend trois paramètres : nom, prenom et age. Elle
+      doit renvoyer une chaine de la forme : "Bonjour" + nom + prenom + ", tu as
+      " + age + "ans".
+    </p>
+
+    <script>
+      let nom = "l'asticot ";
+      let prenom = "jojo ";
+      let age = " 26";
+
+      function bonjour(nom, prenom, age) {
+        document.write("bonjour " + prenom + nom + "tu as : " + age + " ans ");
+      }
+      bonjour(nom, prenom, age);
+    </script>
+    <h1>Exercice 7</h1>
+    <p>
+      Faire une fonction qui prend deux paramètres : age et genre. Le paramètre
+      genre peut prendre comme valeur Homme ou Femme. La fonction doit renvoyer
+      en fonction des paramètres (gérer tous les cas) : Vous êtes un homme et
+      vous êtes majeur Vous êtes un homme et vous êtes mineur Vous êtes une
+      femme et vous êtes majeur Vous êtes une femme et vous êtes mineur
+    </p>
+    <script>
+      let age2 = 23;
+      let genre2 = "homme";
+      function genre(age2, genre) {
+        if (genre2 == "homme" && age2 >= 18) {
+          document.write("vous êtes un homme et vous ètes majeur");
+        } else if (genre2 == "homme" && age2 < 18) {
+          document.write("vous êtes un homme et vous ètes mineur");
+        } else if (genre2 == "femme" && age2 >= 18) {
+          document.write("vous êtes une femme et vous ètes majeure");
+        } else if (genre2 == "femme" && age2 < 18) {
+          document.write("vous ètes une femme et vous ètes mineure");
+        } else {
+          document.write(" mauvaises valeurs ");
+        }
+      }
+      genre(age2, genre2);
+    </script>
+    <h1>Exercice 8</h1>
+    <p>
+      Faire une fonction qui prend en paramètre trois nombres et qui renvoit la
+      somme de ces nombres. Tous les paramètres doivent avoir une valeur par
+      défaut.
+    </p>
+    <script>
+        let nb1 = 2;
+        let nb2 = 3;
+        let nb3 = 4;
+        let nb4
+        function sum(nb1, nb2, nb3){
+            nb4 = nb1 + nb2 + nb3;
+            document.write(nb4);
+
+        }
+        sum(nb1,nb2,nb3);
+    </script>
+  </body>
+</html>
